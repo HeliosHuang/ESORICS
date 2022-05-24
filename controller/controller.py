@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/11/19 11:02 上午
-# @Author  : Roy
-# @Email   : liry19@mails.tsinghua.edu.cn
-# @File    : controller.py
 
 import subprocess
 from datetime import datetime
