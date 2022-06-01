@@ -46,7 +46,7 @@ adb shell sleep 1
 # kill app
 adb shell am force-stop com.qihoo.camera
 ```
-This scipt opens the app by tapping a certain position of the emulator's desktop and then open the camera for streaming. At last, it stops the streaming function and goes back to the desktop, making sure the next script can work normally, and kills the app.
+This scipt opens the app by tapping a certain position of the emulator's desktop and then opens the camera for streaming. At last, it stops the streaming function and goes back to the desktop, making sure the next script can work normally, and kills the app.
 
 We list the functions of the devices in activity_list.csv and use controller.py to run these BASH scripts in certain periods.
 
