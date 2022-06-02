@@ -2,13 +2,13 @@
 This repository contains part of the datasets we used in IoTEnsemble (20 TCP/IP based devices, each device selects the first three days of data) and the control scripts for devices.
 
 ## IoT Testbed
-We set up a testbed consisting of 28 IoT devices (20 IP-enabled devices), including cameras, sound boxes, gateways (hubs), plugs, bulbs and many sensors. This testbed is located in our lab and all staff in the lab are free to use them.
+We set up a testbed consisting of 28 IoT devices (20 IP-enabled devices), including cameras, sound boxes, gateways (hubs), plugs, bulbs and many sensors. This testbed is located in our lab and all staff in the lab are free to use them （testbed1.png).
 
-![contents](https://github.com/HeliosHuang/ESORICS/blob/master/testbed1.png)
+![contents](testbed1.png)
 
-Our goal is to collect the complete traffic of these devices. We use two wireless routers as access points (WAP), because we find our number of devices may exceed the maximum number of connections for one WAP and thus cause losing connections sometimes. Note that these two WAPs do not enable any routing or DHCP functions; they just function like switches. Then the two WAPs are connected to another router. This router functions as the DHCP server that assigns IP addresses to each connected device; it is also a NAT gateway between LAN and WAN. Besides, this router is an enterprise-grade router that supports port mirroring. We mirror the traffic of the two ports that the two WAPs are connected to the third port connected to a computer, which runs a TCPDump script to capture the traffic.
+Our goal is to collect the complete traffic of these devices. We use two wireless routers as access points (WAP), because we find our number of devices may exceed the maximum number of connections for one WAP and thus cause losing connections sometimes. Note that these two WAPs do not enable any routing or DHCP functions; they just function like switches. Then the two WAPs are connected to another router. This router functions as the DHCP server that assigns IP addresses to each connected device; it is also a NAT gateway between LAN and WAN. Besides, this router is an enterprise-grade router that supports port mirroring. We mirror the traffic of the two ports that the two WAPs are connected to the third port connected to a computer, which runs a TCPDump script to capture the traffic (testbed2.png).
 
-![contents](https://github.com/HeliosHuang/ESORICS/blob/master/testbed2.png)
+![contents](testbed2.png)
 
 
 ## Dataset architecture
